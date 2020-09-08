@@ -1,1 +1,0 @@
-# stolprom-front
