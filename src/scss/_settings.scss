@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+$def-color: #242424;
+$blue: #00667F;
+$orange: #EF562D;
+
+*{
+  box-sizing: border-box;
+  color: $def-color;
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  //background-color: #E5E5E5;
+}
+
+html, body{
+  min-height: 100vh!important;
+  height: 100%!important;
+  margin: 0;
+}
+
+main{
+  flex: 1 0 auto;
+}
+footer, header{
+  flex: 0 0 auto;
+}
+
+*::before, *::after{
+  max-width: 100%;
+}
+
+ul{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+}
+
+img, svg{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 1.15rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: $def-color;
+  text-decoration: none;
+}
+
+p, span, a{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: $def-color;
+  text-decoration: none;
+}
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+input{
+  max-width: 100%;
+}
+
+main{
+  padding-top: 48px;
+}
+
+@media screen
+and (min-width: 768px) and (max-width: 991.88px){
+  .container{
+    max-width: 748px;
+  }
+}
+
+@media screen
+and (min-width: 768px){
+  main{
+    padding-top: 169px;
+  }
+}
+
+@media screen
+and (min-width: 1200px){
+  main{
+    padding-top: 164px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
