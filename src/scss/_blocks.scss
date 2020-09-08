@@ -1,0 +1,21 @@
+.def-button{
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  //width: 185px;
+  padding: 18px 32px;
+  //height: 55px;
+  border: 1px solid #544B46;
+  background: linear-gradient(180deg, #544B46 0%, #554C47 0.52%, #544B46 0.53%, #786358 99.97%, #544B46 99.98%, #7C6254 99.99%);
+  border-radius: 60px;
+  color: #fff;
+  font-family: 'pf dindsplay pro medium';
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0px 4px 40px #544B46;
+  }
+}
