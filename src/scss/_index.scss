@@ -1,0 +1,231 @@
+.first-screen{
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 160px;
+  background: linear-gradient(180deg, #FFFFFF 47.07%, rgba(255, 255, 255, 0) 85.35%);
+
+  &::before{
+    display: block;
+    content: '';
+    position: absolute;
+    background-image: url('./files/imgs/first-screen.jpg');
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 60%;
+    z-index: -1;
+  }
+
+  &__content{
+    margin-bottom: 24px;
+
+    h1{
+      margin-bottom: 24px;
+      font-family: $medium-mag;
+      font-size: 40px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 48px;
+
+      span{
+        font-family: inherit;
+        font-size: inherit;
+        position: relative;
+        display: block;
+        z-index: 1;
+        font-weight: inherit;
+        line-height: inherit;
+        &::before{
+          display: block;
+          content: '';
+          width: 362px;
+          height: 77px;
+          background-image: url('./files/imgs/icons/title-back.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: none;
+          max-height: none;
+          z-index: -1;
+        }
+      }
+    }
+
+    p{
+      text-align: center;
+      margin: 0 auto;
+      width: 300px;
+      max-width: 100%;
+    }
+  }
+
+  &__box{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 34px 20px;
+    width: calc(100% - 40px);
+    max-width: 316px;
+
+    &-title{
+      margin-bottom: 12px;
+      font-size: 22px;
+      font-family: $def-mag;
+    }
+
+    &-text{
+      margin-bottom: 24px;
+    }
+
+
+  }
+}
+
+.choose-format{
+
+  &__slider{
+    position: relative;
+
+    .slide__wrap{
+      display: flex;
+      justify-content: center;
+
+      &-item{
+        position: relative;
+
+        &__title{
+          position: absolute;
+          left: 20px;
+          bottom: 70px;
+          color: #fff;
+          font-size: 18px;
+          font-family: $medium-font;
+        }
+
+        &__price{
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          color: #fff;
+
+          span{
+            font-size: 32px;
+            font-family: $medium-mag;
+            color: #fff;
+            padding: 0 10px;
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.drop-request{
+  padding: 34px 0;
+  background: #544B46;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.25);
+
+  &__title{
+    margin-bottom: 34px;
+
+    p{
+      color: #fff;
+      font-family: $def-mag;
+      font-weight: 400;
+      font-size: 26px;
+      text-align: center;
+      padding: 0 2px;
+    }
+  }
+
+  &__button{
+    text-align: center;
+  }
+}
+
+.best{
+
+  &-left{
+
+    &__title{
+      
+      &::before{
+        display: block;
+        content: 'посмотрите наши';
+        color: #BDBDBD;
+        font-size: 18px;
+      }
+
+      &::after{
+        left: 0;
+      }
+    }
+
+    &__item{
+      display: block;
+      width: 290px;
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto 50px;
+
+      &-img{
+        background: #F0ECEC;
+        border-radius: 8px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+        width: 260px;
+        height: 224px;
+      }
+
+      &-title{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-family: $medium-font;
+      }
+    }
+  }
+
+  &-right{
+
+    &__item{
+      display: block;
+      width: 290px;
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto 50px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &-img{
+        background: #F0ECEC;
+        border-radius: 8px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+        width: 260px;
+        height: 224px;
+      }
+
+      &-title{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-family: $medium-font;
+      }
+    }
+  }
+}

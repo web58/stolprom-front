@@ -3,6 +3,7 @@
   src: url('./files/fonts/displaypro/PFDinDisplayPro-Regular.eot');
   src: url('./files/fontsdisplaypro//PFDinDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
   url('./files/fonts/displaypro/PFDinDisplayPro-Regular.woff') format('woff'),
+  url('./files/fonts/magistral/PFDinDisplayPro-Regular.woff2') format('woff2'),
   url('./files/fonts/displaypro/PFDinDisplayPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -13,13 +14,40 @@
   src: url('./files/fonts/displaypro/PFDinDisplayPro-Medium.eot');
   src: url('./files/fontsdisplaypro//PFDinDisplayPro-Medium.eot?#iefix') format('embedded-opentype'),
   url('./files/fonts/displaypro/PFDinDisplayPro-Medium.woff') format('woff'),
+  url('./files/fonts/magistral/PFDinDisplayPro-Medium.woff2') format('woff2'),
   url('./files/fonts/displaypro/PFDinDisplayPro-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Magistral';
+  src: url('./files/fonts/magistral/Magistral-Medium.eot');
+  src: local('./files/fonts/magistral/Magistral Medium'), local('Magistral-Medium'),
+  url('./files/fonts/magistral/Magistral-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/magistral/Magistral-Medium.woff2') format('woff2'),
+  url('./files/fonts/magistral/Magistral-Medium.woff') format('woff'),
+  url('./files/fonts/magistral/Magistral-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral Book';
+  src: url('./files/fonts/magistral/Magistral-Book.eot');
+  src: local('./files/fonts/magistral/Magistral Book'), local('Magistral-Book'),
+  url('./files/fonts/magistral/Magistral-Book.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/magistral/Magistral-Book.woff2') format('woff2'),
+  url('./files/fonts/magistral/Magistral-Book.woff') format('woff'),
+  url('./files/fonts/magistral/Magistral-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $def-font: 'pf dindsplay pro', sans-serif;
 $medium-font: 'pf dindsplay pro medium', sans-serif;
+$def-mag: 'Magistral Book', sans-serif;
+$medium-mag: 'Magistral', sans-serif;
 $def-color: #544B46;
 
 *{
@@ -145,7 +173,6 @@ input{
   outline-style: none!important;
 }
 
-
 @media screen
 and (min-width: 768px){
 
@@ -196,10 +223,12 @@ and (min-width: 768px){
     margin: 0 -20px;
   }
 
+
 }
 
 @media screen
 and (min-width: 1200px){
+
 
 }
 

@@ -16,8 +16,16 @@ jQuery(function($) {
         $('body').removeClass('header-scrolled');
       }
     });
-  }
+  } else if (window.matchMedia("(max-width: 767px)").matches){
 
+    $('.choose-slider').slick({
+      slidesToShow: 1,
+      dots: false,
+      nextArrow: '<div class="next-button-slide"></div>',
+      prevArrow: '<div class="prev-button-slide"></div>',
+      arrows: true
+    });
+  }
 
 
 });

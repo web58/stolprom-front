@@ -18,4 +18,107 @@
   &:hover{
     box-shadow: 0px 4px 40px #544B46;
   }
+
+  &.light-color{
+    background: #FACBAD;
+    border: 1px solid #FACBAD;
+    color: $def-color;
+  }
+}
+
+.main{
+  padding-top: 70px;
+}
+
+section{
+  margin-bottom: 50px;
+}
+
+.def-title{
+  font-family: $def-mag;
+  font-size: 26px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  &::after{
+    display: block;
+    content: '';
+    width: 120px;
+    height: 4px;
+    background: #FACBAD;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+}
+
+.only-320{
+  display: block;
+}
+
+.next-button-slide{
+  width: 32px;
+  height: 32px;
+  background-image: url('/files/imgs/icons/arrow.png');
+  background-size: cover;
+  font-size: 0;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%) scale(-1, 1);
+  z-index: 1;
+}
+
+.prev-button-slide{
+  width: 32px;
+  height: 32px;
+  background-image: url('/files/imgs/icons/arrow.png');
+  background-size: cover;
+  font-size: 0;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media screen
+and (min-width: 768px){
+
+  .main{
+    padding-top: 87px;
+  }
+
+  section{
+    margin-bottom: 65px;
+  }
+
+  .def-title{
+    margin-bottom: 40px;
+
+    &::after{
+    left: 20px;
+    }
+  }
+
+  .only-320{
+    display: none;
+  }
+}
+
+@media screen
+and (min-width: 1200px){
+
+  .main{
+    padding-top: 163px;
+  }
+
+  section{
+    margin-bottom: 80px;
+  }
+
+  .def-title{
+    margin-bottom: 50px;
+  }
 }

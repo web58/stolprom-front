@@ -1,0 +1,283 @@
+@media screen
+and (min-width: 768px){
+
+  .first-screen{
+    padding-top: 100px;
+    padding-bottom: 66px;
+    background: linear-gradient(90deg, #FFFFFF 47.07%, rgba(255, 255, 255, 0) 85.35%);
+
+    &::before{
+      left: 40%;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__content{
+      margin-bottom: 60px;
+
+      h1{
+        font-size: 42px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 50px;
+
+        &::before{
+          display: block;
+          content: '';
+          width: 729px;
+          height: 155px;
+          background-image: url('./files/imgs/icons/title-back.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: none;
+          max-height: none;
+          z-index: -1;
+        }
+
+        span{
+          display: inline;
+
+          &::before{
+            display: none;
+          }
+        }
+      }
+
+      p{
+        width: 440px;
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    &__box{
+      max-width: 545px;
+      margin: 0;
+      padding: 40px;
+    }
+  }
+
+  .drop-request{
+    padding: 48px 0;
+
+    &__title{
+      padding: 0 35px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .choose-format{
+
+    &__slider{
+      display: flex;
+      padding: 0;
+
+      .slide__wrap{
+        width: 33%;
+        padding: 0 20px;
+
+        &-item{
+
+          &__img{
+            filter: blur(3px);
+          }
+
+          &:hover{
+
+            .slide__wrap-item__img{
+              filter: none;
+            }
+          }
+
+          &__title{
+            bottom: 90px;
+          }
+
+          &__price{
+            bottom: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  .best{
+
+    &-left{
+
+      &__title{
+        padding-top: 35px;
+        text-align: right;
+        margin-bottom: 46px;
+        &::after{
+          left: auto;
+          right: 0;
+        }
+      }
+
+      &__item{
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 16px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &.table{
+          width: 344px;
+          padding: 0;
+        }
+
+        &.furniture{
+          width: 248px;
+        }
+
+        &-img{
+          margin-bottom: 16px;
+          max-width: 100%;
+
+          .table &{
+            width: 344px;
+            height: 296px;
+          }
+
+          .furniture &{
+            width: 248px;
+            height: 154px;
+          }
+        }
+
+        &-title{
+          padding-left: 20px;
+          text-align: left;
+        }
+      }
+    }
+
+    &-right{
+
+      &__item{
+        margin-bottom: 16px;
+        padding: 0;
+        margin-left: 0;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &.chair{
+          width: 248px;
+        }
+
+        &.armchair{
+          width: 344px;
+        }
+
+        &-img{
+
+          .chair &{
+            width: 248px;
+            height: 224px;
+          }
+
+          .armchair &{
+            width: 344px;
+            height: 296px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+@media screen
+and (min-width: 1200px){
+
+
+  .drop-request{
+
+    &__title{
+      max-width: 700px;
+      margin: 0 auto 40px;
+
+      p{
+        padding: 0;
+
+        .only-320{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .best{
+
+    &-left{
+      padding-top: 60px;
+
+      &__item{
+        margin-bottom: 24px;
+
+        &.table{
+          width: 439px;
+        }
+
+        &.furniture{
+          width: 343px;
+        }
+
+        &-img{
+          margin-bottom: 24px;
+
+          .table &{
+            width: 439px;
+            height: 377px;
+          }
+
+          .furniture &{
+            width: 343px;
+            height: 213px;
+          }
+        }
+      }
+    }
+
+    &-right{
+
+      &__item{
+        margin-bottom: 24px;
+
+        &.chair{
+          width: 343px;
+        }
+
+        &.armchair{
+          width: 439px;
+        }
+
+        &-img{
+          margin-bottom: 24px;
+
+          .chair &{
+            width: 343px;
+            height: 308px;
+          }
+
+          .armchair &{
+            width: 439px;
+            height: 377px;
+          }
+        }
+      }
+    }
+  }
+}
