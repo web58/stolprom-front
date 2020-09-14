@@ -83,6 +83,51 @@ section{
   z-index: 1;
 }
 
+main.main{
+
+  .def-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-wrap{
+      text-align: center;
+    }
+
+    &__img{
+      display: block;
+      box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 35px 60px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle{
+      color: #BDBDBD;
+      font-family: $medium-font;
+      margin-bottom: 10px;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    &__title{
+      color: #000;
+      font-size: 18px;
+      font-family: $medium-font;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    &__link{
+
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 @media screen
 and (min-width: 768px){
 

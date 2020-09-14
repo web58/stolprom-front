@@ -1,0 +1,193 @@
+.footer{
+  background-color: #E3D3C4;
+  padding-top: 34px;
+  padding-bottom: 22px;
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &-text{
+      display: flex;
+      flex-direction: column;
+
+      a{
+        margin-bottom: 2px;
+        font-family: $medium-font;
+        font-size: 18px;
+      }
+
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    &-title{
+      margin-bottom: 8px;
+      font-family: $medium-font;
+      width: 100%;
+    }
+
+    &-link{
+      margin-right: 70px;
+      display: flex;
+      align-items: center;
+      &:last-child{
+        margin-right: 0;
+      }
+
+      svg{
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__politics{
+    margin-bottom: 24px;
+
+    a{
+      font-family: $medium-font;
+    }
+  }
+
+  &__nav, &__menu{
+    margin-bottom: 36px;
+
+    li{
+      margin-bottom: 8px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-family: $medium-font;
+      }
+    }
+  }
+
+  &__copyright{
+
+    span{
+      display: block;
+      text-align: center;
+      font-family: $medium-font;
+    }
+
+    a{
+      font-family: $medium-font;
+    }
+  }
+}
+
+
+@media screen
+and (min-width: 768px){
+
+  .footer{
+    padding-top: 40px;
+
+    .row:first-child{
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &__logo{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-height: 100px;
+
+      &-img{
+        display: block;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__social{
+      max-height: 100px;
+    }
+
+    &__politics{
+      max-height: 40px;
+      margin-bottom: 0;
+    }
+
+    &__menu{
+      height: 100%;
+      min-height: 100%;
+    }
+
+    &__nav{
+      height: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+
+@media screen
+and (min-width: 1200px){
+
+  .footer{
+
+    .row:first-child{
+      height: auto;
+      flex-direction: row;
+    }
+
+    &__logo{
+      height: auto;
+      order: 1;
+      margin-bottom: 0;
+      max-height: none;
+    }
+
+    &__social{
+      order: 4;
+      height: auto;
+      margin-bottom: 0;
+      flex-direction: column;
+      max-height: none;
+
+      &-link{
+        margin-right: 0;
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__politics{
+      order: 5;
+      height: auto;
+      margin-bottom: 0;
+      max-height: none;
+    }
+
+    &__menu{
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &__nav{
+      order: 3;
+      margin-bottom: 0;
+      ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 120px;
+      }
+    }
+  }
+}

@@ -161,6 +161,7 @@
         content: 'посмотрите наши';
         color: #BDBDBD;
         font-size: 18px;
+        margin-bottom: 10px;
       }
 
       &::after{
@@ -226,6 +227,182 @@
         font-size: 18px;
         font-family: $medium-font;
       }
+    }
+  }
+}
+
+.content-form{
+  background: #FACBAD;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.25);
+  padding: 34px 10px;
+
+  &__pretitle{
+    font-size: 18px;
+    font-family: $medium-font;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__title{
+    font-size: 26px;
+    font-family: $def-mag;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+
+  &__form{
+
+    input:not([type="submit"]){
+      display: block;
+      margin: 0 auto 16px;
+      border: 1px solid #E3D3C4;
+      box-sizing: border-box;
+      border-radius: 60px;
+      width: 276px;
+      height: 46px;
+      &:nth-last-child(2){
+        margin-bottom: 34px;
+      }
+      padding: 0 24px;
+    }
+
+    input[type="submit"]{
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0px 4px 24px #544B46;
+    }
+  }
+}
+
+.arrival{
+
+  .prev-button-slide{
+    top: 33%;
+    left: 25px;
+  }
+  .next-button-slide{
+    top: 33%;
+    right: 25px;
+  }
+
+  .def-item{
+
+  }
+}
+
+.why{
+
+  .def-title{
+
+    &::before{
+      display: block;
+      content: 'нас рекомендуют';
+      font-size: 18px;
+      color: #BDBDBD;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 64px;
+    }
+
+    &-text{
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.discount{
+//  AAAAAAAAAAAAAAAAAAAAAAAAAAA
+}
+
+.about-us{
+
+  &__video{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe{
+      display: block;
+      height: 200px;
+      width: 350px;
+      max-width: 100%;
+    }
+  }
+
+  &__text{
+
+    .def-title{
+
+      &::before{
+        display: block;
+        content: 'посмотрите видео';
+        font-size: 18px;
+        color: #BDBDBD;
+        margin-bottom: 10px;
+      }
+
+      &::after{
+        left: 0;
+      }
+    }
+  }
+}
+
+.main-news{
+
+  .row{
+    position: relative;
+  }
+
+  &__all{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #544B46;
+    padding-right: 20px;
+
+    &::after{
+      display: block;
+      content: '〉';
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__item{
+    margin-bottom: 50px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    img{
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    span{
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      font-family: $medium-font;
     }
   }
 }

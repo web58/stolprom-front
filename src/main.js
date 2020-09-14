@@ -27,6 +27,28 @@ jQuery(function($) {
     });
   }
 
+  $('.def-slider').slick({
+    slidesToShow: 3,
+    dots: false,
+    arrows: true,
+    nextArrow: '<div class="next-button-slide"></div>',
+    prevArrow: '<div class="prev-button-slide"></div>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
 
 });
 
