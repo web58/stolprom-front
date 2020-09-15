@@ -836,3 +836,287 @@
     }
   }
 }
+
+//ABOUT
+.about{
+
+  &__top{
+    margin-bottom: 20px;
+
+    p{
+      margin-bottom: 20px;
+    }
+  }
+
+  &__left{
+    margin-bottom: 40px;
+
+    &-slider{
+
+      .slider__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+
+  &__right{
+
+    p{
+      margin-bottom: 15px;
+
+    }
+
+    h3{
+      padding-top: 15px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-family: $medium-font;
+    }
+  }
+
+  &__bottom{
+
+    p{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.equipment{
+
+  .slider__item{
+    outline: none;
+  }
+
+  &__left{
+    margin-bottom: 30px;
+
+    &-slider{
+
+      .slider__item{
+
+        &-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img{
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &__right{
+    position: relative;
+
+    .custom-slider-setup{
+      position: absolute;
+      top: 2px;
+      right: 15px;
+      z-index: 1;
+    }
+
+    .slider__item{
+
+      .def-title:after{
+        left: 0;
+      }
+
+      h3{
+        margin-bottom: 16px;
+        font-family: $medium-font;
+      }
+
+      p{
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.thanks{
+
+  .container{
+    position: relative;
+  }
+
+  .custom-slider-setup{
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    z-index: 1;
+  }
+
+  &__slider{
+
+    &-on{
+
+      .slider__item{
+        outline: none;
+
+        &-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.review{
+
+  &__slider{
+    position: relative;
+
+    .custom-slider-setup{
+      position: absolute;
+      left: 45px;
+      bottom: 30px;
+      z-index: 1;
+    }
+
+    &-in{
+
+      .slider__item{
+        padding: 15px;
+
+        .wrap{
+          box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          padding: 36px 20px 96px;
+        }
+
+        &-title{
+          font-size: 18px;
+          margin-bottom: 16px;
+          font-family: $medium-font;
+        }
+
+        &-stars{
+          margin-bottom: 20px;
+          display: flex;
+
+          &__in{
+            margin-right: 8px;
+          }
+
+          &.stars-1{
+
+            .slider__item-stars__in:first-child{
+              svg{
+
+                path{
+                  fill: #FACBAD;
+                }
+              }
+            }
+          }
+
+          &.stars-2{
+
+            .slider__item-stars__in:nth-child(1),
+            .slider__item-stars__in:nth-child(2){
+              svg{
+
+                path{
+                  fill: #FACBAD;
+                }
+              }
+            }
+          }
+
+          &.stars-3{
+
+            .slider__item-stars__in:nth-child(1),
+            .slider__item-stars__in:nth-child(2),
+            .slider__item-stars__in:nth-child(3){
+              svg{
+
+                path{
+                  fill: #FACBAD;
+                }
+              }
+            }
+          }
+
+          &.stars-4{
+
+            .slider__item-stars__in:nth-child(1),
+            .slider__item-stars__in:nth-child(2),
+            .slider__item-stars__in:nth-child(3),
+            .slider__item-stars__in:nth-child(4){
+              svg{
+
+                path{
+                  fill: #FACBAD;
+                }
+              }
+            }
+          }
+
+          &.stars-5{
+
+            .slider__item-stars__in:nth-child(1),
+            .slider__item-stars__in:nth-child(2),
+            .slider__item-stars__in:nth-child(3),
+            .slider__item-stars__in:nth-child(4),
+            .slider__item-stars__in:nth-child(5){
+              svg{
+
+                path{
+                  fill: #FACBAD;
+                }
+              }
+            }
+          }
+        }
+
+        &-text{
+          margin-bottom: 20px;
+
+          p{
+            margin-bottom: 10px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &-personal{
+          position: relative;
+          padding-right: 110px;
+
+          &__title{
+            padding-top: 25px;
+            text-align: right;
+            margin-bottom: 8px;
+            font-family: $medium-font;
+          }
+
+          &__position{
+            text-align: right;
+            font-family: $medium-font;
+          }
+
+          &__img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+    }
+
+  }
+}

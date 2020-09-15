@@ -352,6 +352,48 @@ and (min-width: 768px){
       }
     }
   }
+
+  .equipment{
+
+    &__right{
+
+      .custom-slider-setup{
+        right: 20px;
+      }
+    }
+  }
+
+  .thanks{
+
+    .custom-slider-setup{
+      right: 20px;
+    }
+  }
+
+  .review{
+
+    &__slider{
+
+      .custom-slider-setup{
+        left: 80px;
+        bottom: 40px;
+      }
+
+      &-in{
+
+        .slider__item{
+
+          .wrap{
+            padding: 40px 50px 50px;
+          }
+
+          &-text{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -643,6 +685,40 @@ and (min-width: 1200px){
 
     &+.content-form{
       margin-bottom: 0;
+    }
+  }
+
+  .equipment{
+
+    .row{
+      align-items: center;
+    }
+
+    &__left{
+      margin-bottom: 0;
+    }
+  }
+
+  .review{
+
+    &__slider{
+
+      .custom-slider-setup{
+        left: 170px;
+      }
+
+      &-in{
+
+        .slider__item{
+
+          .wrap{
+            padding: 60px 60px 70px;
+            width: 900px;
+            margin: 0 auto;
+          }
+
+        }
+      }
     }
   }
 }
