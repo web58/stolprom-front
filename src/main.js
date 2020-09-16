@@ -246,6 +246,22 @@ jQuery(function($) {
   //  TIMER FINISH
 
 
+
+  // FORMS START
+  $('.callback-call').on('click', function () {
+
+  });
+
+  $('.wholesaler-call').on('click', function () {
+
+  });
+
+  $('.order-call').on('click', function () {
+
+  });
+  // FORMS FINISH
+
+
 });
 
 
