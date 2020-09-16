@@ -394,6 +394,33 @@ and (min-width: 768px){
       }
     }
   }
+
+  .delivery{
+
+    &__item{
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts{
+
+    &__text{
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-title{
+        width: 100%;
+      }
+
+      .inner{
+        width: 33%;
+
+        &.contacts__text-mode{
+          width: 22%;
+        }
+      }
+    }
+  }
 }
 
 
@@ -720,5 +747,46 @@ and (min-width: 1200px){
         }
       }
     }
+  }
+
+  .delivery{
+
+    &__item{
+
+
+      &-count{
+        padding: 0 35px;
+      }
+
+      &-text{
+        padding: 0 35px;
+      }
+    }
+  }
+
+  .contacts{
+
+    &__text{
+      padding-top: 45px;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &-title{
+        width: 100%;
+      }
+
+      .inner{
+        width: 100%;
+
+        &.contacts__text-mode{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .thank-form{
+    padding-top: 55px;
+    margin-bottom: 55px;
   }
 }
