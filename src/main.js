@@ -104,6 +104,39 @@ jQuery(function($) {
   //PRODUCT SLIDER FINISH
 
 
+  //CATALOG MENU START
+  // $('.parent-arrow').on('click', function () {
+  //   $(this).closest('.parent').toggleClass('active').find('ul:first').slideToggle(300);
+  // });
+
+  var activeClassName = 'active';
+  var catalog = $('#catalog-menu');
+
+  catalog.on('click', '.parent-arrow', function (event) {
+    var _t = $(this).closest('.parent');
+    var _ta = _t.hasClass(activeClassName);
+
+    if (_ta) {
+      _t.removeClass(activeClassName);
+    } else {
+      _t.closest('ul').find('.' + activeClassName).removeClass(activeClassName);
+      _t.addClass(activeClassName);
+    }
+  });
+
+
+  if (window.matchMedia("(min-width: 1200px)").matches){
+    if($("#catalog-menu").length){
+      $('.catalog__menu').addClass('opened');
+    }
+  } else {
+    $('.catalog__menu-subtitle').on('click', function () {
+      $(this).closest('.catalog__menu').toggleClass('opened');
+    });
+  }
+  //CATALOG MENU FINISH
+
+
 
   //ABOUT PAGE SLIDERS START
   $('.about__left-slider').slick({
@@ -187,7 +220,6 @@ jQuery(function($) {
     fade: true,
   });
   var currentSlideReview = $('.review__slider-in').slick('slickCurrentSlide') + 1;
-  console.log(currentSlideThanks);
 
   var allSlideReview = $(".review__slider-in").slick("getSlick").slideCount;
   $('.review .custom-all').text(allSlideReview);
@@ -199,67 +231,88 @@ jQuery(function($) {
 
 
   //  TIMER START
-  function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector(".days");
-    var hoursSpan = clock.querySelector(".hours");
-    var minutesSpan = clock.querySelector(".minutes");
-    // var secondsSpan = clock.querySelector(".seconds");
-
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-
-      if (t.total <= 0) {
-        $('#discount').css('display', 'none');
-        clearInterval(timeinterval);
-        return true;
-      }
-
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-      minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-      // secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+  if ($('#discount').hasClass('discount')){
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
     }
 
-    updateClock();
-    var timeinterval = setInterval(updateClock, 10000);
-  }
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector(".days");
+      var hoursSpan = clock.querySelector(".hours");
+      var minutesSpan = clock.querySelector(".minutes");
+      // var secondsSpan = clock.querySelector(".seconds");
 
-  var deadlineEndless = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
-  var deadline = $('.discount').attr('data-deadline');
-  initializeClock('discount', deadline);
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        if (t.total <= 0) {
+          $('#discount').css('display', 'none');
+          clearInterval(timeinterval);
+          return true;
+        }
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+        minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+        // secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 10000);
+    }
+
+    var deadlineEndless = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
+    var deadline = $('.discount').attr('data-deadline');
+    initializeClock('discount', deadline);
+  }
   //  TIMER FINISH
 
 
 
   // FORMS START
   $('.callback-call').on('click', function () {
-
+    $('#callback-form').fadeIn()
   });
 
   $('.wholesaler-call').on('click', function () {
-
+    $('#wholesaler-form').fadeIn()
   });
 
   $('.order-call').on('click', function () {
+    $('#order-form').fadeIn()
+  });
 
+  $('.order-call-custom').on('click', function () {
+    var customFormOrder = $(this).closest('.def-item-wrap').find('.def-item__title').text();
+    $('#order-form').fadeIn();
+    $('#order-form .order-form-product').val(customFormOrder);
+  });
+
+  $('.order-call-product').on('click', function () {
+    var productFormOrder = $(this).closest('.product__right').find('.def-title').text();
+    $('#order-form').fadeIn();
+    $('#order-form .order-form-product').val(productFormOrder);
+  });
+
+  $('.def-popup__back, .def-popup__front-exit').on('click', function () {
+    $('#callback-form, #wholesaler-form, #order-form').fadeOut();
   });
   // FORMS FINISH
+
+  var goToBack = document.referrer
+  $('.go-to-back').attr('href', goToBack);
 
 
 });

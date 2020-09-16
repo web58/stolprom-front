@@ -634,6 +634,21 @@ and (min-width: 1200px){
     }
   }
 
+  .catalog__menu{
+
+    &-subtitle{
+      background-color: #fff;
+
+      &__arrow{
+        display: none;
+      }
+    }
+    
+    &-nav{
+      background-color: #fff;
+    }
+  }
+
   .catalog__content{
 
     .slick-track{

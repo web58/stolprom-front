@@ -9,6 +9,8 @@
 </head>
 <body>
 
+//= ./blocks/preloader.html
+
 //= ./blocks/header.html
 
 <main class="main">
@@ -29,7 +31,54 @@
     <div class="container">
       <div class="row">
 
-        //= ./blocks/catalog-menu.html
+        <div class="col-12 col-xl-3 catalog__menu">
+
+          <div class="catalog__menu-subtitle">
+            <span class="catalog__menu-subtitle__inner">Категории</span>
+            <span class="catalog__menu-subtitle__arrow"></span>
+          </div>
+
+          <div class="catalog__menu-nav" id="catalog-menu">
+            <ul>
+              <li><a href="/">Готовые решения</a></li>
+              <li class="parent">
+                <span class="parent-arrow"></span>
+                <a href="/" >Столы</a>
+                <ul>
+                  <li><a href="/">Столы 1</a></li>
+                  <li><a href="/">Столы 2</a></li>
+                  <li><a href="/">Столы 3</a></li>
+                  <li><a href="/">Столы 4</a></li>
+                  <li class="item-selected active">
+                    <a href="/">Столы 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent">
+                <span class="parent-arrow"></span>
+                <a href="/">Стулья и табуреты</a>
+                <ul>
+                  <li><a href="/">Стулья и табуреты 1</a></li>
+                  <li><a href="/">Стулья и табуреты 2</a></li>
+                  <li><a href="/">Стулья и табуреты 3</a></li>
+                  <li><a href="/">Стулья и табуреты 4</a></li>
+                  <li><a href="/">Стулья и табуреты 5</a></li>
+                </ul>
+              </li>
+              <li><a href="/">Скамьи и кухонные углы</a></li>
+              <li class="parent">
+                <span class="parent-arrow"></span>
+                <a href="/">Прочая мебель</a>
+                <ul>
+                  <li><a href="/">Прочая мебель 1</a></li>
+                  <li><a href="/">Прочая мебель 2</a></li>
+                  <li><a href="/">Прочая мебель 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
 
         <div class="col-12 col-xl-9 search__content">
 
@@ -98,7 +147,7 @@
 
             <div class="search__block-item__title">Не нашли, что искали?</div>
             <div class="search__block-item__link">
-              <a href="catalog.html" class="def-button">Перейти в каталог</a>
+              <a href="/catalog.html" class="def-button">Перейти в каталог</a>
             </div>
 
           </div>

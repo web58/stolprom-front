@@ -125,12 +125,18 @@
 
         li{
           margin-bottom: 24px;
+          &.current-page a{
+            text-decoration: underline;
+          }
           &:last-child{
             margin-bottom: 0;
           }
 
           a{
             font-family: $medium-font;
+            &:hover{
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -174,8 +180,15 @@
           margin-bottom: 0;
         }
 
+        &.current-page a{
+          text-decoration: underline;
+        }
+
         a{
           font-family: $medium-font;
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
     }
