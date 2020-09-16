@@ -421,6 +421,63 @@ and (min-width: 768px){
       }
     }
   }
+
+  .discount{
+
+    &__title{
+      margin-bottom: 48px;
+    }
+
+    &__timer{
+
+      &-item{
+        padding: 0 20px;
+
+        &__count{
+          width: 120px;
+          height: 120px;
+          line-height: 120px;
+          font-size: 56px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &__form{
+      width: 570px;
+
+      &-wrap{
+        padding: 30px 40px;
+      }
+
+      &-title{
+
+        h3{
+          text-align: center;
+
+          &::before{
+            left: calc(50% - 28px);
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      &-text{
+
+        p{
+          text-align: center;
+          padding: 0 30px;
+        }
+      }
+
+      form{
+
+        input:not([type="submit"]){
+          width: 360px;
+        }
+      }
+    }
+  }
 }
 
 

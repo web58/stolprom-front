@@ -1,9 +1,45 @@
-<section class="discount">
+<section id="discount" class="discount" data-deadline="2021-09-15">
   <div class="container">
     <div class="row">
-      <div class="col-12" style="color: red; font-size: 24px;">
-        счетчик обратного времени - пока пропустил https://denis-creative.com/jstimer/
+      <h2 class="col-12 discount__title">Оптовая скидка на весь ассортимент </h2>
+
+      <div class="col-12 discount__timer">
+
+        <div class="discount__timer-item">
+          <div class="discount__timer-item__count days"></div>
+          <div class="discount__timer-item__title">Дни</div>
+        </div>
+        <div class="discount__timer-item">
+          <div class="discount__timer-item__count hours"></div>
+          <div class="discount__timer-item__title">Часы</div>
+        </div>
+        <div class="discount__timer-item">
+          <div class="discount__timer-item__count minutes"></div>
+          <div class="discount__timer-item__title">Минуты</div>
+        </div>
+
       </div>
+
+      <div class="col-12 discount__form">
+        <div class="discount__form-wrap">
+
+          <div class="discount__form-title">
+            <h3>Забронировать скидку!</h3>
+          </div>
+          <div class="discount__form-text">
+            <p>Отправляя нам заявку, вы сразу закрепляете за собой постоянную увеличенную скидку на закупку любого объема продукции, которую обычно получают дилеры от объема 900 000 руб. Используйте бронь в течение 3 месяцев со дня ее получения. <br> Факт брони ни к чему вас не обязывает.</p>
+          </div>
+
+          <form>
+            <input type="hidden" value="Название формы">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <input type="submit" class="def-button" value="Получить каталог мебели">
+          </form>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
