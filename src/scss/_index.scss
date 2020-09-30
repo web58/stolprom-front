@@ -564,15 +564,20 @@
       &-link{
 
         a{
-          padding-right: 20px;
+          padding-right: 25px;
           position: relative;
           &::after{
             display: block;
-            content: '〉';
+            content: '';
             position: absolute;
-            right: 5px;
-            top: 50%;
+            right: 0;
+            top: 55%;
             transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            background-image: url('./files/imgs/icons/catalog-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
           }
         }
       }
@@ -596,6 +601,9 @@
 
         &.out-of-stock{
 
+          .def-item__img{
+            opacity: .4;
+          }
           .def-item__title{
             margin-bottom: 10px;
           }
@@ -702,6 +710,9 @@
     }
 
     &.out-of-stock{
+      .category-list__item-img{
+        opacity: .4;
+      }
       .category-list__item-stock{
         display: block;
       }
@@ -712,8 +723,8 @@
       flex-direction: column;
       align-items: center;
       position: relative;
-      padding-bottom: 0;
       background-color: #fff;
+      padding-bottom: 35px;
     }
 
     &-img{
@@ -741,7 +752,7 @@
     &-stock{
       position: absolute;
       left: 15px;
-      top: 230px;
+      bottom: 10px;
       font-family: $medium-font;
       color: #BDBDBD;
       display: none;
@@ -864,7 +875,7 @@
 .search__content{
 
   .def-title{
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 
     &::after{
       left: 0;
@@ -895,8 +906,14 @@
       text-align: center;
 
       span{
+        display: block;
+        margin: 0 auto;
+        text-align: left;
         font-family: inherit;
         color: inherit;
+        align-content: space-between;
+        width: 370px;
+        max-width: 100%;
       }
     }
   }
@@ -1146,12 +1163,21 @@
             margin-right: 8px;
           }
 
+          svg{
+            width: 20px;
+            height: 20px;
+
+            polygon{
+              stroke: #FACBAD;
+            }
+          }
+
           &.stars-1{
 
             .slider__item-stars__in:first-child{
               svg{
 
-                path{
+                polygon{
                   fill: #FACBAD;
                 }
               }
@@ -1164,7 +1190,7 @@
             .slider__item-stars__in:nth-child(2){
               svg{
 
-                path{
+                polygon{
                   fill: #FACBAD;
                 }
               }
@@ -1178,7 +1204,7 @@
             .slider__item-stars__in:nth-child(3){
               svg{
 
-                path{
+                polygon{
                   fill: #FACBAD;
                 }
               }
@@ -1193,7 +1219,7 @@
             .slider__item-stars__in:nth-child(4){
               svg{
 
-                path{
+                polygon{
                   fill: #FACBAD;
                 }
               }
@@ -1209,7 +1235,7 @@
             .slider__item-stars__in:nth-child(5){
               svg{
 
-                path{
+                polygon{
                   fill: #FACBAD;
                 }
               }
