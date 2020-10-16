@@ -35,12 +35,15 @@ and (min-width: 768px){
           background-size: cover;
           background-repeat: no-repeat;
           position: absolute;
-          left: -25px;
+          //left: -25px;
           top: 50%;
-          transform: translateY(-50%);
+          //transform: translateY(-50%);
           max-width: none;
           max-height: none;
           z-index: -1;
+
+          transform: translate(-30px, -50%);
+          left: 0;
         }
 
         span{
@@ -141,6 +144,24 @@ and (min-width: 768px){
           width: 248px;
         }
 
+        &:nth-child(2n){
+          width: 320px;
+
+          .best-right__item-img{
+            width: 320px;
+            height: 224px;
+          }
+        }
+
+        &:nth-child(2n-1){
+          width: 248px;
+
+          .best-left__item-img{
+            width: 248px;
+            height: 154px;
+          }
+        }
+
         &-img{
           margin-bottom: 16px;
           max-width: 100%;
@@ -179,6 +200,15 @@ and (min-width: 768px){
 
         &.armchair{
           width: 344px;
+        }
+
+        &:nth-child(2n){
+          width: 320px;
+
+          .best-right__item-img{
+            width: 320px;
+            height: 296px;
+          }
         }
         
         &-title{
@@ -377,6 +407,11 @@ and (min-width: 768px){
 
   .review{
 
+    .wrap-top{
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__slider{
 
       .custom-slider-setup{
@@ -521,6 +556,15 @@ and (min-width: 1200px){
           width: 343px;
         }
 
+        &:nth-child(2n-1){
+          width: 343px;
+
+          .best-left__item-img{
+            width: 343px;
+            height: 213px;
+          }
+        }
+
         &-img{
           margin-bottom: 24px;
 
@@ -548,6 +592,15 @@ and (min-width: 1200px){
 
         &.armchair{
           width: 439px;
+        }
+
+        &:nth-child(2n){
+          width: 439px;
+
+          .best-right__item-img{
+            width: 439px;
+            height: 377px;
+          }
         }
 
         &-img{
