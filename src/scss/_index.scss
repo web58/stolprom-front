@@ -8,7 +8,7 @@
     display: block;
     content: '';
     position: absolute;
-    background-image: url('./files/imgs/first-screen.jpg');
+    background-image: url('./local/templates/stolprom_2020/files/imgs/first-screen.jpg');
     left: 0;
     right: 0;
     top: 40%;
@@ -40,7 +40,7 @@
           content: '';
           width: 362px;
           height: 77px;
-          background-image: url('./files/imgs/icons/title-back.svg');
+          background-image: url('./local/templates/stolprom_2020/files/imgs/icons/title-back.svg');
           background-size: cover;
           background-repeat: no-repeat;
           position: absolute;
@@ -456,7 +456,7 @@
       display: block;
       width: 15px;
       height: 15px;
-      background-image: url("./files/imgs/icons/catalog-arrow.svg");
+      background-image: url("./local/templates/stolprom_2020/files/imgs/icons/catalog-arrow.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -517,7 +517,7 @@
             display: block;
             width: 25px;
             height: 25px;
-            background-image: url("./files/imgs/icons/catalog-arrow.svg");
+            background-image: url("./local/templates/stolprom_2020/files/imgs/icons/catalog-arrow.svg");
             background-repeat: no-repeat;
             background-position: center;
             order: 2;
@@ -575,7 +575,7 @@
             transform: translateY(-50%);
             width: 25px;
             height: 25px;
-            background-image: url('./files/imgs/icons/catalog-arrow.svg');
+            background-image: url('./local/templates/stolprom_2020/files/imgs/icons/catalog-arrow.svg');
             background-repeat: no-repeat;
             background-position: center;
           }
@@ -895,7 +895,7 @@
       border-radius: 60px;
       padding-left: 24px;
       padding-right: 35px;
-      background-image: url('./files/imgs/icons/search.svg');
+      background-image: url('./local/templates/stolprom_2020/files/imgs/icons/search.svg');
       background-repeat: no-repeat;
       background-position: 95% center;
     }
@@ -1524,7 +1524,7 @@
 .discount{
   padding-top: 80px;
   padding-bottom: 290px;
-  background-image: url('./files/imgs/timer.jpg');
+  background-image: url('./local/templates/stolprom_2020/files/imgs/timer.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1611,7 +1611,7 @@
         &::before{
           display: block;
           content: '';
-          background-image: url('./files/imgs/icons/title-back.svg');
+          background-image: url('./local/templates/stolprom_2020/files/imgs/icons/title-back.svg');
           width: 232px;
           height: 49px;
           position: absolute;
