@@ -60,7 +60,8 @@ section{
 .next-button-slide{
   width: 32px;
   height: 32px;
-  background-image: url('/files/imgs/icons/arrow.png');
+  //background-image: url('/files/imgs/icons/arrow.png');
+  background-image: url('/local/templates/stolprom_2020/files/imgs/icons/arrow.png');
   background-size: cover;
   font-size: 0;
   position: absolute;
@@ -74,7 +75,8 @@ section{
 .prev-button-slide{
   width: 32px;
   height: 32px;
-  background-image: url('/files/imgs/icons/arrow.png');
+  //background-image: url('/files/imgs/icons/arrow.png');
+  background-image: url('/local/templates/stolprom_2020/files/imgs/icons/arrow.png');
   background-size: cover;
   font-size: 0;
   position: absolute;
@@ -163,7 +165,8 @@ main.main{
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background-image: url('./files/imgs/icons/arrow.svg');
+    //background-image: url('./files/imgs/icons/arrow.svg');
+    background-image: url('/local/templates/stolprom_2020/files/imgs/icons/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -174,7 +177,8 @@ main.main{
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background-image: url('./files/imgs/icons/arrow.svg');
+    //background-image: url('./files/imgs/icons/arrow.svg');
+    background-image: url('/local/templates/stolprom_2020/files/imgs/icons/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     transform: scale(-1, 1);
