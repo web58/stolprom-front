@@ -81,6 +81,18 @@ jQuery(function($) {
 
 
   //PRODUCT SLIDER START
+
+  $('.slider-for').slickLightbox({
+    slick: {
+      itemSelector: 'a',
+      navigateByKeyboard: true,
+      dots: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  });
+
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
